@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_bg"
+    tools:context="com.example.humax.albumdemo.MainActivity">
+    <RelativeLayout
+        android:id="@+id/rl_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_80"
+        android:background="@color/color_c"
+        >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_26"
+            android:background="@drawable/bg_image_purpe"
+            android:src="@drawable/back_icon" />
+
+        <ImageView
+            android:id="@+id/share"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_26"
+            android:background="@drawable/bg_image_purpe"
+            android:src="@drawable/share_icon" />
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/albumlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/size_16"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        android:layout_marginTop="@dimen/size_16"
+        android:dividerHeight="@dimen/size_16" />
+</LinearLayout>

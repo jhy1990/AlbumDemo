@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FixedAspectRatioFrameLayout">
+        <attr name="aspect_ratio" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="VideoView">
+        <attr name="loadingId" format="reference" />
+        <attr name="autoplay" format="boolean" />
+        <attr name="startImage" format="reference" />
+        <attr name="looping" format="boolean" />
+        <attr name="mute" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="AudioRecordView">
+        <attr name="recordingImage" format="reference" />
+        <attr name="idleImage" format="reference" />
+        <attr name="recordMode">
+            <flag name="Press" value="0"/>
+            <flag name="Click" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>
