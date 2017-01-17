@@ -13,6 +13,7 @@ import com.benny.library.autoadapter.viewcreator.ViewCreatorCollection;
 import com.benny.library.autoadapter.viewholder.DataGetter;
 import com.example.humax.albumdemo.ImageGalleryActivity;
 import com.example.humax.albumdemo.R;
+import com.example.humax.albumdemo.VideoPlayerActivity;
 import com.example.humax.albumdemo.model.Asset;
 import com.example.humax.albumdemo.model.ContentType;
 import com.example.humax.albumdemo.model.SameDayMediaFiles;
@@ -69,7 +70,7 @@ public class WholeViewHolder extends BaseViewHolder<SameDayMediaFiles> {
                     context.startActivity(new Intent(context, ImageGalleryActivity.class).putExtra(ImageGalleryActivity.KEY_IMAGES, photos).putExtra(ImageGalleryActivity.KEY_INDEX, photos.indexOf(clicked.content)));
                     break;
                 case VIDEO:
-                    //context.startActivity(new Intent(context, VideoPlayerActivity.class).putExtra(VideoPlayerActivity.KEY_VIDEO_PATH, clicked.content));
+                    context.startActivity(new Intent(context, VideoPlayerActivity.class).putExtra(VideoPlayerActivity.KEY_VIDEO_PATH, clicked.content));
                     break;
             }
         });
